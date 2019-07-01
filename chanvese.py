@@ -32,7 +32,7 @@
 import numpy as np
 import scipy.ndimage as nd
 import matplotlib.pyplot as plt
-
+import skimage.io as io
 
 eps = np.finfo(float).eps
 
@@ -264,7 +264,7 @@ def convergence(p_mask, n_mask, thresh, c):
 
 
 if __name__ == "__main__":
-    img = nd.imread('VIS1.bmp', flatten=True)
+    img = io.imread('VIS1.bmp', flatten=True)
     mask = np.zeros(img.shape)
     mask[20:100, 20:100] = 1
 
