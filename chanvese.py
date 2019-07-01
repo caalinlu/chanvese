@@ -264,7 +264,7 @@ def convergence(p_mask, n_mask, thresh, c):
 
 
 if __name__ == "__main__":
-    img = nd.imread('brain.png', flatten=True)
+    img = nd.imread('VIS1.bmp', flatten=True)
     mask = np.zeros(img.shape)
     mask[20:100, 20:100] = 1
 
